@@ -1,0 +1,7 @@
+{
+  "name": "pokepedia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
