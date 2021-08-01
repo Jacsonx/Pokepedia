@@ -1,20 +1,115 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            <img src="assets/images/pokepedias.png" width="150px" alt="">
+        </ion-title>
+        <button slot="end">
+            <img class="pokeball" src="assets/images/pokeball.png" width="55px" alt="">
+        </button>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <div class="image">
+        <img class="psyduck" src="assets/images/pokemong.gif" width="100%" alt="">
+    </div>
+    <div id="container">
+        <img src="assets/images/pokepedias.png">
+        <img src="assets/images/psyducks.png" width="200px">
+    </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+    <!--<iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/oyrpPt_dT9Q" frameborder="0" allowfullscreen></iframe>-->
+    <!--
+    <div>
+        {{data}}
+        <img [src]="image" width="200px">
+    </div>-->
+    <!--<video width="320" height="240" autoplay loop muted class="bg_video">
+            <source src="https://www.youtube.com/watch?v=oyrpPt_dT9Q" type="video/webm">
+        </video>-->
+    <ion-grid>
+
+        <ion-row>
+            <ion-col size="4">
+                <ion-card>
+
+                    <img [src]="bulbasaur" width="130px">
+                    <ion-card-header>
+                        Pokemons
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col size="4">
+                <ion-card>
+                    <img [src]="charizard" width="130px">
+                    <ion-card-header>
+                        Evolutions
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col size="4">
+                <ion-card>
+                    <img [src]="ampharos" width="130px">
+                    <ion-card-header>
+                        Items
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="4">
+                <ion-card>
+                    <img [src]="suicune" width="130px">
+                    <ion-card-header>
+                        Abilities
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col size="4">
+                <ion-card>
+                    <img [src]="mewtwo" width="130px">
+                    <ion-card-header>
+                        Games
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+            <ion-col size="4">
+                <ion-card>
+                    <img [src]="onix" width="130px">
+                    <ion-card-header>
+                        Locations
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-grid>
+    <div class="footer">
+        <img class="nuvem" src="assets/images/nuvem.gif" width="230px" alt="">
+        <p class="underContruct">Site Under Construction</p>
+        <img src="assets/images/picachu.png" width="200px" alt="">
+    </div>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>
+            <img src="assets/images/pokepedias.png" width="150px" alt="">
+        </ion-title>
+        <ion-item slot="end">
+            <div class="link-logo github">
+                <a href="https://github.com/Jacsonx" target="_blank">
+                 Created By Jako
+                 </a>
+            </div>
+        </ion-item>
+    </ion-toolbar>
+</ion-footer>

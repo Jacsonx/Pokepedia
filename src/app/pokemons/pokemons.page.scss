@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Pokemon GB";
+    src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"), url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box {
+    left: 25px;
+    top: 40px;
+    color: black;
+    position: absolute;
+    font-family: "Pokemon GB", Arial, sans-serif;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 8px;
+    width: 400px;
+    height: 328px;
+    line-height: 16px;
+    margin: auto;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
+}
+
+.line {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
+    font-family: "Pokemon GB", Arial, sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p {
+    margin-top: 70px;
+    line-height: 25px;
+    text-justify: distribute;
+    letter-spacing: 1px;
+    text-align: justify !important;
+}
+
+.typing-animation {
+    animation: blinkCursor 100ms steps(80) infinite normal, typing 2s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 16em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.box>i {
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: black;
+    margin-top: 23px;
+    animation: bounce 0.5s ease-in-out 0 infinite alternate;
+    float: right;
+}
+
+@keyframes bounce {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 23px;
+    }
+}
+
+.left-fle {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    border-left: 240px solid rgb(146, 0, 0);
+    transform: rotate(180deg);
+}
+
+.left-dle {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    border-left: 240px solid rgb(0, 0, 0);
+    transform: rotate(180deg);
+}
+
+.left-de {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
+/*
+.arrow-right {
+    width: 100px;
+    height: 100px;
+    border-top: 1000px solid black !important;
+    border-bottom: 1160px solid black !important;
+    border-left: 1160px solid rgb(34, 0, 255);
+}*/
