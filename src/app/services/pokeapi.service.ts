@@ -14,4 +14,12 @@ export class PokeapiService {
         const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
         return this.httpClient.get(url).toPromise();
     }
+
+
+
+    async getAllPokemons(limit: number, offseat: number) {
+        const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offseat}&limit=${limit}`
+
+        return this.httpClient.get(url).toPromise();
+    }
 }

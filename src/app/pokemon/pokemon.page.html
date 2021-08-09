@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            <img src="assets/images/pokepedias.png" width="150px" alt="">
+        </ion-title>
+        <button slot="end">
+            <img class="pokeball" src="assets/images/pokeball.png" width="55px" alt="">
+        </button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-list>
+                    <ion-item *ngFor="let item of response">
+                        <ion-card>
+                            <img [src]="image" width="150px" />
+                            <ion-card-header>
+                                {{ item.name }}
+                            </ion-card-header>
+                        </ion-card>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>
+            <img src="assets/images/pokepedias.png" width="150px" alt="">
+        </ion-title>
+        <ion-item slot="end">
+            <div class="link-logo github">
+                <a href="https://github.com/Jacsonx" target="_blank">
+                 Created By Jako
+                 </a>
+            </div>
+        </ion-item>
+    </ion-toolbar>
+</ion-footer>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PokeapiService } from '../services/pokeapi.service';
 import { ModalController } from '@ionic/angular';
 import { PokemonsPage } from '../pokemons/pokemons.page';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,13 +23,17 @@ export class HomePage {
 
     constructor(
         public pokeApi: PokeapiService,
-        public modalController: ModalController
-    ) { }
+        public modalController: ModalController,
+        public route: Router
+    ) {
+        this.presentModal()
+
+    }
 
 
     ionViewDidEnter() {
         this.getPokemon();
-        this.presentModal();
+       // this.presentModal();
     }
 
 
@@ -55,6 +60,32 @@ export class HomePage {
             cssClass: 'my-custom-modal-css'
         });
         return await modal.present();
+    }
+
+
+    getPokemons() {
+        this.route.navigateByUrl('/pokemon');
+    }
+
+    getEvolutions() {
+        this.route.navigateByUrl('/evolutions')
+    }
+
+
+    getItems() {
+        this.route.navigateByUrl('/items');
+    }
+
+    getAbilities() {
+        this.route.navigateByUrl('/abilities');
+    }
+
+    getGames() {
+        this.route.navigateByUrl('/games');
+    }
+
+    getLocations() {
+        this.route.navigateByUrl('/locations');
     }
 
 
